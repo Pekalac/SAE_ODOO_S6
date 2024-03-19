@@ -1,0 +1,25 @@
+migration:
+  versions:
+    - version: setup
+      operations:
+        pre:
+          - odoo -i base --stop-after-init --workers=0 --no-xmlrpc
+          - anthem songs.install.pre::main
+      modes:
+        sample:
+          operations:
+            post:
+              - anthem songs.sample.data_sample::main
+        full:
+          operations:
+            post:
+              - anthem songs.install.data_full::main
+      addons:
+        upgrade:
+          # OCA
+
+          #### oca/web
+#          - web_environment_ribbon
+
+          # local-src
+          # - addon

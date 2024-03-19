@@ -1,0 +1,6 @@
+<templates xml:space="preserve">
+
+    <t t-name="web.SwitchCompanyButton">
+        <div t-on-click="openPopup"><span class="oe_topbar_name d-none d-lg-block" t-esc="companyService.currentCompany.name"/></div>
+    </t>
+</templates>

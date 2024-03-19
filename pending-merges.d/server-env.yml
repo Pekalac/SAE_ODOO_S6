@@ -1,0 +1,8 @@
+../odoo/external-src/server-env:
+  remotes:
+    camptocamp: git@github.com:camptocamp/server-env.git
+    OCA: git@github.com:OCA/server-env.git
+  target: camptocamp merge-branch-0000-master
+  merges:
+  - OCA 17.0
+  - OCA refs/pull/168/head
