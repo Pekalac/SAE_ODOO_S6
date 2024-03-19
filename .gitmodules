@@ -51,10 +51,10 @@
 ;	url = https://github.com/OCA/reporting-engine.git
 ;	branch = 17.0
 
-[submodule "odoo/external-src/server-env"]
-	path = odoo/external-src/server-env
-	url = git@github.com:OCA/server-env.git
-	branch = 17.0
+; [submodule "odoo/external-src/server-env"]
+; 	path = odoo/external-src/server-env
+; 	url = git@github.com:OCA/server-env.git
+; 	branch = 17.0
 
 ;[submodule "odoo/external-src/server-tools"]
 ;	path = odoo/external-src/server-tools
