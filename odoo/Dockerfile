@@ -76,8 +76,6 @@ RUN cd /odoo && pip3 install -r requirements.txt
 # frequency: sometimes
 # cost:      very light
 ENV ADDONS_PATH="/odoo/src/addons, \
-  /odoo/external-src/odoo-cloud-platform, \
-  /odoo/external-src/server-env, \
   /odoo/local-src" \
   LIMIT_TIME_CPU=86400 \
   LIMIT_TIME_REAL=86400 \
