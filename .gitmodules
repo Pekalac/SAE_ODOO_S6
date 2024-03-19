@@ -1,6 +1,6 @@
 [submodule "odoo/src"]
 	path = odoo/src
-	url = git@gitlab.com:kal-it/internal/OCB.git
+	url = https://github.com/odoo/odoo
 	branch = 17.0
 
 ; [submodule "odoo/external-src/kal-it-erp-modules"]
