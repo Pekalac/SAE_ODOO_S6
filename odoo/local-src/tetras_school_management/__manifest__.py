@@ -1,7 +1,7 @@
 {
     "name": "Tetras - School Management",
     "version": "17.0.1.0.0",
-    "depends": ["base"],
+    "depends": ["base", "product"],
     "author": "Kal-It",
     "website": "https://kal-it.fr",
     "license": "GPL-3 or any later version",
@@ -11,8 +11,9 @@
         "views/grade_views.xml",
         "views/student_views.xml",
         "views/teacher_views.xml",
+        "views/classe_views.xml",
         "views/menu_views.xml",
-        "views/tetras_assets_index.xml",
+        "views/refuge_assets_index.xml",
     ],
     "assets": {
         "tetras_school_management._assets_tetras": [

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+     <t t-name="tetras_school_management.ProductFormScreen">
+         <h2>
+             <a class="ariane" t-on-click="() => this.tetras.showScreen('MainScreen')">
+                 Tetras
+             </a>
+             >
+             <a class="ariane" t-on-click="() => this.tetras.showScreen('ProductListScreen')">
+                 Products List
+             </a>
+             >
+             <t t-esc="props.product.name"/>
+         </h2>
+         <div class="product-form">
+             <table class="table-form">
+                 <tr class="lign-form">
+                     <th class="attribute">Name</th>
+                     <td><t t-esc="props.product.name" /></td>
+                 </tr>
+                 <tr>
+                     <th class="attribute">Description</th>
+                     <td><t t-esc="props.product.description" /></td>
+                 </tr>
+                 <tr>
+                     <th class="attribute">Type</th>
+                     <td><t t-esc="props.product.type" /></td>
+                 </tr>
+             </table>
+         </div>
+         <div class="style-button back-button" t-on-click="() => this.tetras.showScreen('ProductListScreen')">Back</div>
+    </t>
+</templates>

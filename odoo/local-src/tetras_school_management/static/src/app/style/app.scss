@@ -1,0 +1,60 @@
+:root {
+  --primary-color: #B5053C;
+  --secondary-color: #fff;
+  --content-left-min: 15px;
+}
+
+.tetras-content {
+
+  background-color: #fff;
+
+  h1 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  h2 {
+    margin: 12px var(--content-left-min);
+  }
+
+  .ariane {
+    cursor: pointer;
+    color: #212529;
+  }
+
+  .ariane:hover {
+    transition: color 0.3s;
+    color: var(--primary-color);
+  }
+
+  .style-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 12px var(--content-left-min);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  .style-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: 0.2s;
+  }
+
+  .back-button {
+    padding: 7px 40px;
+  }
+
+}

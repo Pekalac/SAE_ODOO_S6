@@ -11,6 +11,7 @@
         parent="menu_tetras_school_management_root"
         sequence="1" />
 
+
     <menuitem
         id="menu_tetras_students"
         name="Students"
@@ -31,4 +32,11 @@
         parent="menu_tetras_school_management_root"
         action="tetras_grade_action"
         sequence="2" />
+
+    <menuitem
+        id="menu_tetras_classe"
+        name="Classes"
+        parent="menu_tetras_school_management_root"
+        action="tetras_classe_action"
+        sequence="3" />
 </odoo>

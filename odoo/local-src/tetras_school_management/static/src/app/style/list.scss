@@ -1,0 +1,35 @@
+.table-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.td-champs, .list-name {
+    padding: 12px var(--content-left-min);
+    text-align: left;
+}
+
+.tr-values, .tr-champs {
+    border-bottom: 1px solid #ddd;
+}
+
+.tr-values:nth-child(even) {
+    background-color: rgba(0,0,0,0.03);
+}
+
+.tr-values:nth-child(odd) {
+    background-color: rgba(0,0,0,0.01);
+}
+
+.tr-values:hover {
+    background-color: #f1f1f1;
+}
+
+.td-champs {
+    font-weight: bold;
+}
+
+.tr-values {
+    font-style: italic;
+    cursor: pointer;
+}

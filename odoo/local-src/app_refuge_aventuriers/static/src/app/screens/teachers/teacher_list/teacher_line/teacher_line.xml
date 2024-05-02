@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+     <t t-name="app_refuge_aventuriers.TeacherLine">
+         <tr class="tr-values" t-on-click="props.onClick">
+             <td class="list-name"><t t-esc="props.name" /></td>
+         </tr>
+    </t>
+</templates>

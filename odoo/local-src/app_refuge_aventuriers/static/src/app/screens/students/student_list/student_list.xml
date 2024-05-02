@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+     <t t-name="app_refuge_aventuriers.StudentListScreen">
+         <div class="list">
+             <h2><a class="ariane" t-on-click="() => this.refuge.showScreen('MainScreen')">Tetras</a> > Students List</h2>
+             <div>
+                 <table class="table-list">
+                     <thead>
+                         <tr class="tr-champs">
+                             <td class="td-champs">Name</td>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <t t-foreach="refuge.students" t-as="student" t-key="student.id">
+                             <StudentLine name="student.name"
+                                      studentId="student.id"
+                                      onClick="() => this.onStudentClick(student)" />
+                         </t>
+                     </tbody>
+                 </table>
+             </div>
+             <div class="style-button back-button" t-on-click="() => this.refuge.showScreen('MainScreen')">Back</div>
+         </div>
+    </t>
+</templates>

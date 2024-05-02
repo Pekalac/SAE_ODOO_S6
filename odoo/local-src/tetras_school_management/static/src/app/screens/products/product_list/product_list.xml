@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+     <t t-name="tetras_school_management.PersonListScreen">
+         <div class="list">
+             <h2><a class="ariane" t-on-click="() => this.tetras.showScreen('MainScreen')">Tetras</a> > Products List</h2>
+             <div>
+                 <table class="table-list">
+                     <thead>
+                         <tr class="tr-champs">
+                             <td class="td-champs">Name</td>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <t t-foreach="tetras.products" t-as="product" t-key="product.id">
+                             <ProductLine name="product.name"
+                                          productId="product.id"
+                                          onClick="() => this.onProductClick(product)" />
+                         </t>
+                     </tbody>
+                 </table>
+             </div>
+             <div class="style-button back-button" t-on-click="() => this.tetras.showScreen('MainScreen')">Back</div>
+         </div>
+
+    </t>
+</templates>

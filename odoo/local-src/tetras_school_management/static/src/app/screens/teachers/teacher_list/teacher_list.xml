@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
-     <t t-name="tetras_school_management.TeacherListScreen">
-         <div class="teacher-list">
-             <strong>Teachers List</strong>
-             <table>
-                 <thead>
-                     <tr>
-                         <td style="font-weight: bold">Name</td>
-                     </tr>
-                 </thead>
-                 <tbody>
-                     <t t-foreach="tetras.teachers" t-as="teacher" t-key="teacher.id">
-                         <TeacherLine name="teacher.name"
-                                      teacherId="teacher.id"
-                                      onClick="() => this.onTeacherClick(teacher)" />
-                     </t>
-                 </tbody>
-             </table>
-             <div t-on-click="() => this.tetras.showScreen('MainScreen')">Back</div>
+     <t t-name="tetras_school_management.PersonListScreen">
+         <div class="list">
+             <h2><a class="ariane" t-on-click="() => this.tetras.showScreen('MainScreen')">Tetras</a> > Teachers List</h2>
+             <div>
+                 <table class="table-list">
+                     <thead>
+                         <tr class="tr-champs">
+                             <td class="td-champs">Name</td>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <t t-foreach="tetras.teachers" t-as="teacher" t-key="teacher.id">
+                             <TeacherLine name="teacher.name"
+                                          teacherId="teacher.id"
+                                          onClick="() => this.onTeacherClick(teacher)" />
+                         </t>
+                     </tbody>
+                 </table>
+             </div>
+             <div class="style-button back-button" t-on-click="() => this.tetras.showScreen('MainScreen')">Back</div>
          </div>
 
     </t>

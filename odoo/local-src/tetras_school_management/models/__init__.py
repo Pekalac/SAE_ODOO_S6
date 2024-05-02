@@ -1,4 +1,5 @@
 from . import grade
 from . import management
-from . import student
-from . import teacher
+from . import person
+from . import classe
+from . import product_template

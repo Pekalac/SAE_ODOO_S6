@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
      <t t-name="tetras_school_management.StudentListScreen">
-         <strong>Students List</strong>
-         <table>
-             <thead>
-                 <tr>
-                     <td style="font-weight: bold">Name</td>
-                 </tr>
-             </thead>
-             <tbody>
-                 <t t-foreach="tetras.students" t-as="student" t-key="student.id">
-                     <StudentLine name="student.name"
-                                  studentId="student.id"
-                                  onClick="() => this.onStudentClick(student)" />
-                 </t>
-             </tbody>
-         </table>
-         <div t-on-click="() => this.tetras.showScreen('MainScreen')">Back</div>
-
+         <div class="list">
+             <h2><a class="ariane" t-on-click="() => this.tetras.showScreen('MainScreen')">Tetras</a> > Students List</h2>
+             <div>
+                 <table class="table-list">
+                     <thead>
+                         <tr class="tr-champs">
+                             <td class="td-champs">Name</td>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <t t-foreach="tetras.students" t-as="student" t-key="student.id">
+                             <StudentLine name="student.name"
+                                      studentId="student.id"
+                                      onClick="() => this.onStudentClick(student)" />
+                         </t>
+                     </tbody>
+                 </table>
+             </div>
+             <div class="style-button back-button" t-on-click="() => this.tetras.showScreen('MainScreen')">Back</div>
+         </div>
     </t>
 </templates>

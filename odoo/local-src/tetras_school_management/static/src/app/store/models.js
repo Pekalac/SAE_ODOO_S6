@@ -7,6 +7,10 @@ export class Student {
 
 }
 
+export class Product {
+
+}
+
 export class Mark {
 
 }

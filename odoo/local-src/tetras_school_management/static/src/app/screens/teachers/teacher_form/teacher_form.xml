@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
      <t t-name="tetras_school_management.TeacherFormScreen">
+         <h2>
+             <a class="ariane" t-on-click="() => this.tetras.showScreen('MainScreen')">
+                 Tetras
+             </a>
+             >
+             <a class="ariane" t-on-click="() => this.tetras.showScreen('TeacherListScreen')">
+                 Teachers List
+             </a>
+             >
+             <t t-esc="props.teacher.name"/>
+         </h2>
          <div class="teacher-form">
-             <div t-on-click="() => this.tetras.showScreen('TeacherListScreen')">Back</div>
-             <span>Name: <t t-esc="props.teacher.name"/></span><br/>
-             <span>Phone: <t t-esc="props.teacher.phone"/></span><br/>
-             <span>Email: <t t-esc="props.teacher.email"/></span><br/>
-             <span>Diploma: <t t-esc="props.teacher.diploma"/></span>
+             <table class="table-form">
+                 <tr class="lign-form">
+                     <th class="attribute">Name</th>
+                     <td><t t-esc="props.teacher.name" /></td>
+                 </tr>
+                 <tr>
+                     <th class="attribute">Phone</th>
+                     <td><t t-esc="props.teacher.phone" /></td>
+                 </tr>
+                 <tr>
+                     <th class="attribute">Email</th>
+                     <td><t t-esc="props.teacher.email" /></td>
+                 </tr>
+                 <tr>
+                     <th class="attribute">Diploma</th>
+                     <td><t t-esc="props.teacher.diploma" /></td>
+                 </tr>
+             </table>
          </div>
+         <div class="style-button back-button" t-on-click="() => this.tetras.showScreen('TeacherListScreen')">Back</div>
     </t>
 </templates>

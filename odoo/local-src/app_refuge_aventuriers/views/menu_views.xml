@@ -1,0 +1,42 @@
+<odoo>
+    <menuitem
+        id="menu_refuge_school_management_root"
+        name="Refuge"
+        groups="base.group_user"
+        sequence="25" />
+
+    <menuitem
+        id="menu_refuge_school_management_contacts"
+        name="Contacts"
+        parent="menu_refuge_school_management_root"
+        sequence="1" />
+
+
+    <menuitem
+        id="menu_refuge_students"
+        name="Students"
+        parent="menu_refuge_school_management_contacts"
+        action="refuge_student_action"
+        sequence="1" />
+
+    <menuitem
+        id="menu_refuge_teacher"
+        name="Teachers"
+        parent="menu_refuge_school_management_contacts"
+        action="refuge_teacher_action"
+        sequence="2" />
+
+    <menuitem
+        id="menu_refuge_grade"
+        name="Grades"
+        parent="menu_refuge_school_management_root"
+        action="refuge_grade_action"
+        sequence="2" />
+
+    <menuitem
+        id="menu_refuge_classe"
+        name="Classes"
+        parent="menu_refuge_school_management_root"
+        action="refuge_classe_action"
+        sequence="3" />
+</odoo>

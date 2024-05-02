@@ -5,10 +5,10 @@
         <div class="tetras dvh-100 d-flex flex-column">
 <!--            <Navbar />-->
             <div class="tetras-content flex-grow-1 overflow-auto">
+                <h1 t-on-click="() => this.tetras.showScreen('MainScreen')">TETRAS</h1>
                 <t t-component="tetras.mainScreen.component"
                     t-props="tetras.mainScreen.props"/>
             </div>
         </div>
     </t>
-
 </templates>
