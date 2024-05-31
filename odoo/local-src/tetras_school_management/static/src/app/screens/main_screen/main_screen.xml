@@ -12,8 +12,8 @@
              <div class="teacher-button main-button style-button"
                   t-on-click="() => tetras.showScreen('TeacherListScreen')">Teachers
              </div>
-             <div class="product-button main-button style-button"
-                  t-on-click="() => tetras.showScreen('ProductListScreen')">Products
+             <div class="classe-button main-button style-button"
+                  t-on-click="() => tetras.showScreen('ClasseListScreen')">Classes
              </div>
          </div>
     </t>

@@ -3,12 +3,12 @@
 import { Component } from "@odoo/owl";
 
 
-export class ProductLine extends Component {
-    static template = "tetras_school_management.ProductLine";
+export class ClasseLine extends Component {
+    static template = "tetras_school_management.ClasseLine";
 
     static props = {
         name: String,
-        productId: Number,
+        classeId: Number,
         onClick: { type: Function, optional: true },
     };
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
-     <t t-name="tetras_school_management.PersonListScreen">
+     <t t-name="tetras_school_management.TeacherListScreen">
          <div class="list">
              <h2><a class="ariane" t-on-click="() => this.tetras.showScreen('MainScreen')">Tetras</a> > Teachers List</h2>
              <div>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
-     <t t-name="tetras_school_management.PersonListScreen">
+     <t t-name="tetras_school_management.ClasseListScreen">
          <div class="list">
-             <h2><a class="ariane" t-on-click="() => this.tetras.showScreen('MainScreen')">Tetras</a> > Products List</h2>
+             <h2><a class="ariane" t-on-click="() => this.tetras.showScreen('MainScreen')">Tetras</a> > Classes List</h2>
              <div>
                  <table class="table-list">
                      <thead>
@@ -11,16 +11,15 @@
                          </tr>
                      </thead>
                      <tbody>
-                         <t t-foreach="tetras.products" t-as="product" t-key="product.id">
-                             <ProductLine name="product.name"
-                                          productId="product.id"
-                                          onClick="() => this.onProductClick(product)" />
+                         <t t-foreach="tetras.classes" t-as="classe" t-key="classe.id">
+                             <ClasseLine name="classe.name"
+                                      classeId="classe.id"
+                                      onClick="() => this.onClasseClick(classe)" />
                          </t>
                      </tbody>
                  </table>
              </div>
              <div class="style-button back-button" t-on-click="() => this.tetras.showScreen('MainScreen')">Back</div>
          </div>
-
     </t>
 </templates>

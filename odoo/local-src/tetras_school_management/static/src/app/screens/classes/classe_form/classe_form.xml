@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+     <t t-name="tetras_school_management.ClasseFormScreen">
+         <h2>
+             <a class="ariane" t-on-click="() => this.tetras.showScreen('MainScreen')">
+                 Tetras
+             </a>
+             >
+             <a class="ariane" t-on-click="() => this.tetras.showScreen('ClasseListScreen')">
+                 Classes List
+             </a>
+             >
+             <t t-esc="props.classe.name"/>
+         </h2>
+         <div class="classe-form">
+             <table class="table-form">
+                 <tr class="lign-form">
+                     <th class="attribute">Name</th>
+                     <td><t t-esc="props.classe.name" /></td>
+                 </tr>
+                 <tr>
+                     <th class="attribute">Phone</th>
+                     <td><t t-esc="props.classe.phone" /></td>
+                 </tr>
+                 <tr>
+                     <th class="attribute">Email</th>
+                     <td><t t-esc="props.classe.email" /></td>
+                 </tr>
+             </table>
+         </div>
+
+         <div class="style-button back-button" t-on-click="() => this.tetras.showScreen('ClasseListScreen')">Back</div>
+    </t>
+</templates>
